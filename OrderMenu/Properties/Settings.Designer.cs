@@ -26,6 +26,17 @@ namespace OrderMenu.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=NEUROGLIAL\\SQLSERVER;Initial Catalog=OrderData;Integrated Security=Tr" +
+            "ue;Pooling=False")]
+        public string OrderDBConnectionString {
+            get {
+                return ((string)(this["OrderDBConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\DatabaseOrderMenu.md" +
             "f;Integrated Security=True")]
         public string DatabaseOrderMenuConnectionString {
@@ -37,11 +48,11 @@ namespace OrderMenu.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=XZJS-PC\\SQLEXPRESS;Initial Catalog=OrderDB;Persist Security Info=True" +
-            ";User ID=sa;Password=sa")]
-        public string OrderDBConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=NEUROGLIAL\\SQLSERVER;Initial Catalog=OrderData;Integrated Security=Tr" +
+            "ue;Pooling=False")]
+        public string OrderDataConnectionString {
             get {
-                return ((string)(this["OrderDBConnectionString"]));
+                return ((string)(this["OrderDataConnectionString"]));
             }
         }
     }
